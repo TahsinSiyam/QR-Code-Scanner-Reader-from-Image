@@ -1,0 +1,8 @@
+run these commands on you terminal or CMD:
+pip install OpenCV-Python
+pip install qrcode
+
+
+
+to run Programe:
+simply run the py file using python main.py in you terminal but makesure you are in the folder using Terminal or CMD.
