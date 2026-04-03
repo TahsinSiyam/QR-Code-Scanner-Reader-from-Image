@@ -18,7 +18,7 @@ def scanQR():
     try:
         img = input("Enter Image path here: ")
         imgReader = cv2.imread(f'r"{img}"')
-        detector = cv2.QRCodeDetector
+        detector = cv2.QRCodeDetector()
         data, bbox, staright_code = detector.detectAndDecode(img=imgReader)
         if data:
             print(f"Decoded Data: {data}")
@@ -28,9 +28,9 @@ def scanQR():
     except :
         print("Error Occured!")
 
-if inp == 1:
+if inp == "1":
     createQR()
-elif inp == 2:
+elif inp == "2":
     scanQR()
 else:
     print("An Error Occured!")
